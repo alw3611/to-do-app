@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="background-blur blur-1"></div>
+    <div class="background-blur blur-2"></div>
+
+    <main class="container">
+        <div class="todo-card">
+            <div class="header">
+                <div>
+                    <h1>My Tasks</h1>
+                    <p>Stay productive and organized</p>
+                </div>
+            </div>
+
+            <form class="todo-form" id="todoForm">
+                <input
+                    type="text"
+                    id="todoInput"
+                    placeholder="Add a new task..."
+                    autocomplete="off"
+                />
+                <button type="submit">Add</button>
+            </form>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">
+                    All
+                </button>
+                <button class="filter-btn" data-filter="active">
+                    Active
+                </button>
+                <button class="filter-btn" data-filter="completed">
+                    Completed
+                </button>
+            </div>
+
+            <ul id="todoList" class="todo-list"></ul>
+
+            <div class="footer">
+                <span id="taskCount">0 tasks</span>
+                <button id="clearCompleted" class="clear-btn">
+                    Clear Completed
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
